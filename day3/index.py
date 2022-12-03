@@ -16,6 +16,7 @@ for line in f:
     if(seg2.find(char) != -1):
       total += chars.index(char) + 1
       break 
+    cached.append(char)
 
 print(f"[Part1]: {total}")
 
