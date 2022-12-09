@@ -5,15 +5,15 @@ def has_duplicate(str):
   if str[0] in str[1:]: return True
   return has_duplicate(str[1:])
 
-def findEndOfMarker(increment):
+def find_end_of_marker(increment):
   for i in range(0, len(f)):
     chars = f[i:i+increment]
     if not has_duplicate(chars): 
       return i + increment
 
 
-partOneIndex = findEndOfMarker(4)
-partTwoIndex = findEndOfMarker(14)
+partOneIndex = find_end_of_marker(4)
+partTwoIndex = find_end_of_marker(14)
 
 print(f"[Part1]: {partOneIndex}")
 print(f"[Part2]: {partTwoIndex}")
